@@ -1,1 +1,140 @@
-# Trabalho-18-03-2026-EM-GRUPO
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buggati</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #301414, #000000);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #301414, #000000);
+            color: #c29fa1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .card {
+           background: linear-gradient(to right, white, #fff5f5);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 750px;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #301414;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: #301414;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #c29fa1;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Variações da Buggati</h1>
+    <p>Carro de luxo - Chiron & Veron</p>
+</header>
+
+<main>
+
+    <div class="card">
+        <h1>Sobre o Grupo</h2>
+        <p>Nome:Miguel, Luiz, Gabriel Filyp, Isabelly Malta, Douglas</p>
+        <p>Turma:301</p>
+        <p>Data: 18 / 03 / 2026</p>
+    </div>
+
+    <div class="card">
+        <h2>Quais são as variaçoes?</h2>
+        <ul>
+            <li>Potência e desempenho do motor</li>
+            <li>Velocidade máxima e aceleração</li>
+            <li>Tecnologia e inovação mecânica</li>
+            <li>Design e acabamento interno</li>
+        </ul>
+    </div>
+
+    <div class="card">
+<center>
+        <h2>Buggati Chiron</h2>
+        <img src="https://bugatti.imgix.net/677aa8b9531541bbada7c4e0/chiron-sport-og.jpg">
+</center>
+    </div>
+
+<div class="card">
+<center>
+        <h2>Buggati Veron</h2>
+        <img src="https://www.automaistv.com.br/wp-content/uploads/2026/01/Bugatti-Veyron-FKP-Hommage-Dianteira-1320x712.webp">
+</center>
+    </div>
+
+    <div class="card">
+        <h2>Link de exemplo</h2>
+        <p>
+            <a href="https://www.youtube.com/watch?v=EIgoI5fiZHY">
+                Abrir a comparação
+            </a>
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Interação</h2>
+        <button onclick="mostrarMensagem()">Clique aqui</button>
+        <p id="mensagem"></p>
+    </div>
+
+</main>
+
+<footer>
+    Página criada no Laboratório Web
+</footer>
+
+<script>
+    function mostrarMensagem() {
+        document.getElementById("mensagem").innerHTML =
+        "Obrigado por chegar até aqui. :D";
+    }
+</script>
+
+</body>
+</html>
